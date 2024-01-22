@@ -1,0 +1,29 @@
+.header {
+    background-image: linear-gradient(
+            rgba(145, 36, 39, 0.6),
+            rgba(151, 33, 37, 0.6)
+        ),
+        url(../imgs/speaker-performing-stage-with-spotlight-talking-many-people-audience-event-professional_285885-4661.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.talkers-toggle h2 {
+    background-color: rgba(214, 46, 51, 0.6);
+    color: white;
+}
+
+.talker p {
+    display: none;
+    margin: 0;
+    padding: 10px;
+}
+.counter {
+    background-image: linear-gradient(
+            rgba(151, 33, 37, 0.8),
+            rgba(151, 33, 37, 0.8)
+        ),
+        url(../imgs/invitation-2508607__340.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
