@@ -11,19 +11,36 @@
 
         <title>Document</title>
     </head>
+
     <body>
+        <!------------------ Start landing Page ------------------>
         <header
+            id="hero"
             class="position-relative vh-100 header text-white d-flex justify-content-center align-items-center"
         >
-            <span class="position-absolute top-50 start-0 p-3 fs-3 fw-light">
-                <i class="fa fa-bars"></i> open
-            </span>
-            <div class="text-center">
+            <nav class="position-fixed bg-black">
+                <p class="px-5 py-4 text-end">
+                    <i class="fa fa-close fs-3 nav-close"></i>
+                </p>
+
+                <ul class="row row-gap-5 fs-5">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#talkers">Duration</a></li>
+                    <li><a href="#counter">Details</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="text-center w-100">
                 <h1 class="display-3 fw-semibold">ُEgyptJS</h1>
                 <span>Happy new year everyone! </span>
+                <p class="text-start p-3 fs-3 fw-light">
+                    <i class="fa fa-bars nav-open"></i> open
+                </p>
             </div>
         </header>
-        <section class="py-5">
+        <!------------------ End landing Page ------------------>
+        <!------------------ Start display talkers ------------------>
+        <section id="talkers" class="py-5">
             <div class="container py-5 px-5">
                 <div class="row w-75 m-auto text-center">
                     <div class="talkers-toggle">
@@ -95,7 +112,9 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 counter">
+        <!------------------ End display talkers ------------------>
+        <!------------------ Start counter Section ------------------>
+        <section id="counter" class="py-5 counter">
             <div class="container py-5 text-white fs-2 fw-semibold">
                 <div class="row text-center">
                     <div class="col-md-3">
@@ -113,7 +132,84 @@
                 </div>
             </div>
         </section>
-        <section class="vh-100"></section>
+
+        <!------------------ End counter Section ------------------>
+        <!------------------ Start contact ------------------>
+        <section id="contact" class="py-5 contact">
+            <div class="container">
+                <h2>JOIN US</h2>
+                <p class="text-center text-black-50">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+                <div class="row">
+                    <div class="col-md-6 text-secondary">
+                        <h5 class="fw-bolder text-black">CONTACT INFO</h5>
+                        <p class="text-center">
+                            Why you should hire me writeup Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque
+                            nascetur ridiculus mus.
+                        </p>
+                        <ul class="text-center row row-gap-5 contact">
+                            <li>
+                                <i class="fa fa-location-pin"></i> New Street
+                                22545, Nexa Road, New York City, USA
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <span class="text-danger"
+                                    >hello@uigrid.com</span
+                                >
+                            </li>
+                            <li><i class="fa fa-phone"></i> 001-000-000-000</li>
+                        </ul>
+                        <ul class="social d-flex column-gap-2 py-4">
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-dribbble"></i></li>
+                            <li><i class="fa-brands fa-pinterest"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <form action="" class="row row-gap-4">
+                                <input
+                                    class="form-control"
+                                    name="name"
+                                    type="text"
+                                />
+                                <input
+                                    class="form-control"
+                                    name="email"
+                                    type="text"
+                                />
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    id=""
+                                    cols="30"
+                                    rows="10"
+                                ></textarea>
+                                <p>
+                                    <span class="charNum text-danger fs-5"
+                                        >100</span
+                                    >
+                                    Characyer Reamining
+                                </p>
+                                <button
+                                    class="btn btn-danger w-auto px-3 py-2 rounded-0"
+                                >
+                                    SEND MESSAGE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------ End contact ------------------>
+
         <script src="./js/jquery-3.7.1.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/main.js"></script>

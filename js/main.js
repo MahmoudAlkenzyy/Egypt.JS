@@ -1,3 +1,21 @@
+//open side nav and close it
+
+$('.nav-close').click(() => {
+    $('nav').animate({ left: -$('nav').innerWidth() }, 1000);
+});
+$('.nav-open').click(() => {
+    $('nav').animate({ left: '0' }, 1000);
+});
+
+$('nav a').click((e) => {
+    e.preventDefault();
+    const sec = $(e.target).attr('href');
+
+    const topOfset = $(sec).offset().top;
+
+    $('html,body').animate({ scrollTop: topOfset }, 1000);
+});
+
 // talkers discription display toggle
 $('.talkers-toggle').click((e) => {
     $(e.target).parent().find('p').slideToggle(500);
@@ -21,9 +39,19 @@ function timeCounter() {
     $('.hours').html(`${hours} h`);
     $('.mins').html(`${mins} m`);
     $('.secs').html(`${secs} s`);
-    console.log(secs);
 }
 
 setInterval(() => {
     timeCounter();
 }, 1000);
+// Charcter counter
+console.log($('.contact textarea'));
+$('.contact textarea').keyup(() => {
+    const messageLength = $('.contact textarea').val().length;
+
+    if (messageLength < 100) {
+        $('.charNum').html(100 - messageLength);
+    } else {
+        $('.charNum').html('your available character finished ');
+    }
+});

@@ -1,3 +1,20 @@
+ul {
+    list-style: none;
+}
+nav {
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.nav-open,
+.nav-close {
+    cursor: pointer;
+}
 .header {
     background-image: linear-gradient(
             rgba(145, 36, 39, 0.6),
@@ -26,4 +43,21 @@
         url(../imgs/invitation-2508607__340.jpg);
     background-position: center center;
     background-size: 100% 100%;
+}
+.social li {
+    border: #777 solid 1px;
+    padding: 10px;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social li:hover {
+    background-color: #d62e33;
+    color: white;
+}
+.contact li i {
+    padding: 0 15px;
 }
