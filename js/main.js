@@ -1,5 +1,6 @@
 //open side nav and close it
 
+ $('nav').animate({ left: -$('nav').innerWidth() }, 0);
 $('.nav-close').click(() => {
     $('nav').animate({ left: -$('nav').innerWidth() }, 1000);
 });
