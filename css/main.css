@@ -1,3 +1,6 @@
+body,html{
+    scroll-behavior: unset !important;
+}
 ul {
     list-style: none;
 }
